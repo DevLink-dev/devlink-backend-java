@@ -112,3 +112,11 @@ The following are lists of conventions that either *should* be followed or *must
         }
     }
     ```
+- Javadoc:
+  - Must be added to: 
+    - `public` methods and functions of classes, excluding getters, setters and constructors
+  - Should be added to:
+    - all `private` members of which the purpose is not obvious or the logic is difficult to comprehend
+  - May be added to:
+    - `public static` constants
+    - other `private` members
