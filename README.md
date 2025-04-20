@@ -61,3 +61,26 @@ The following are lists of conventions that either *should* be followed or *must
 - URLs must be `kebab-case`
 - Packages:
   - Names must be `snake_case`
+- Classes:
+  - Names must be `PascalCase`
+  - Annotations should have the following order:
+    - Spring:
+      - Bean type (`@Component`, `@Configuration`, `@RestController`, `@Service`, ...)
+      - JPA:
+        - `@Entity`
+        - Constraints (`@UniqueConstraint`, ...)
+    - Lombok:
+      - constructors:
+        - `@AllArgsConstructor`
+        - `@NoArgsConstructor`
+        - `@RequiredArgsConstructor`
+      - `@Getter`
+      - `@Setter`
+      - `@EqualsAndHashCode`
+      - ...
+  - Should be structured as follows:
+    - `static` constants and variables
+    - Instance attributes
+    - Constructors
+    - `static` functions
+    - Instance methods
