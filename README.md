@@ -25,6 +25,7 @@ Tools like [Lombok](https://projectlombok.org/) are used to reduce boilerplate c
   - [Spring Data JPA](https://spring.io/projects/spring-data-jpa) as ORM
 - [PostgreSQL](https://www.postgresql.org/) as DBMS
 - [Lombok](https://projectlombok.org/) for boilerplate code reduction
+- [Log4j 2](https://logging.apache.org/log4j/2.x/) for logging
 - Unit testing:
   - [JUnit](https://junit.org/junit5/) as testing framework
   - [AssertJ](https://assertj.github.io/doc/) for assertions
@@ -130,7 +131,7 @@ The following are lists of conventions that either *should* be followed or *must
     - [equals()/hashCode()](https://projectlombok.org/features/EqualsAndHashCode)
     - [Constructors](https://projectlombok.org/features/constructor)
     - [Builders](https://projectlombok.org/features/Builder) including with [inheritance](https://projectlombok.org/features/experimental/SuperBuilder)
-    - [Loggers](https://projectlombok.org/features/log)
+    - [Loggers](https://projectlombok.org/features/log): preferred is `@Log4j2`
     - [Utilities](https://projectlombok.org/features/experimental/UtilityClass)
     - [Exceptions](https://projectlombok.org/features/experimental/StandardException)
   - Can be used to set access levels of methods ([Getters/Setters](https://projectlombok.org/features/GetterSetter) and [Constructors](https://projectlombok.org/features/constructor))
@@ -147,3 +148,43 @@ The following are lists of conventions that either *should* be followed or *must
   - features: `feature/<ticket-number>_<short-description>`
   - bugs: `bugfix/<ticket-number>_<short-description>`
 - Commit messages are written according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### Logging
+with [Log4j 2](https://logging.apache.org/log4j/2.x/)
+
+<table>
+   <thead>
+      <tr>
+         <th>Level</th>
+         <th>Usage</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Trace</td>
+         <td>Trace events are used for extremely fine-grained diagnostic information, which can be helpful for tracking down very specific issues or understanding the detailed flow of a program.</td>
+      </tr>
+      <tr>
+         <td>Debug</td>
+         <td>Debug is used for internal system events that are not necessarily observable from the outside, but useful when determining how something happened.</td>
+      </tr>
+      <tr>
+         <td>Info</td>
+         <td>Information events describe things happening in the system that correspond to its responsibilities and functions.</td>
+      </tr>
+      <tr>
+         <td>Warn</td>
+         <td>When service is degraded, endangered, or maybe behaving outside its expected parameters, Warning-level events are used.</td>
+      </tr>
+      <tr>
+         <td>Error</td>
+         <td>When functionality is unavailable or expectations are broken, an Error event is used.</td>
+      </tr>
+      <tr>
+         <td>Fatal</td>
+         <td>The most critical level, Fatal events demand immediate attention.</td>
+      </tr>
+   </tbody>
+</table>
+
+Usage guidelines are taken from [here](https://github.com/solid-stack-solutions/voycar-backend/blob/main/README.md#logging).
