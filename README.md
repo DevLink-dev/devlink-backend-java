@@ -84,3 +84,5 @@ The following are lists of conventions that either *should* be followed or *must
     - Constructors
     - `static` functions
     - Instance methods
+- `static` Constants:
+  - Names must be `SCREAMING_SNAKE_CASE`
