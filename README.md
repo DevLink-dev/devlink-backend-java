@@ -55,3 +55,8 @@ This project is developed following the conventions listed below.
 ### Conventions
 
 The following are lists of conventions that either *should* be followed or *must* be followed when contributing to this project. 
+
+#### Java
+
+- Packages:
+  - Names must be `snake_case`
