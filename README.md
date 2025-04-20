@@ -45,3 +45,5 @@ Tools like [Lombok](https://projectlombok.org/) are used to reduce boilerplate c
     ```sh
     docker compose up -d
     ```
+   
+To use this project, it is advised to use the corresponding [Frontend](https://github.com/DevLink-dev/devlink-frontend-svelte). 
