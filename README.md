@@ -137,3 +137,6 @@ The following are lists of conventions that either *should* be followed or *must
   - Can be used with annotations on methods and constructors using [onX](https://projectlombok.org/features/experimental/onX)
   - Can be used to include or exclude fields for [equals()/hashCode()](https://projectlombok.org/features/EqualsAndHashCode)
   - Other annotations than the ones mentioned above should not be used as some are difficult to comprehend or maintain
+- Code must compile without Compiler Warnings
+- Code should compile without relevant Sonar/SonarQube Warnings
+
