@@ -4,6 +4,20 @@
 
 Backend for the DevLink platform - developed with Java Spring
 
+## Description
+
+The DevLink Backend allows developers to link up and share project ideas to work on as a community.
+
+This project provides a REST API that allows users to create and manage their own profiles.
+They can also create, manage and join projects to work on as a community.
+This allows developers to link up all around the world and learn new skills that will help them master coding and get the job they want.
+
+This project is developed using the [Java Spring Framework](https://spring.io).
+It allows the use of [well-established tools](https://spring.io/projects) included in it.
+This reduces the amount of work required to implement new features.
+Using a widespread high-level language like Java also assures that the project is easy to maintain and update.
+Tools like [Lombok](https://projectlombok.org/) are used to reduce boilerplate code.
+
 ## Technology Overview
 
 - [Java Spring](https://spring.io/) for dependency injection
