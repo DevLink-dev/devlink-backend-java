@@ -58,5 +58,6 @@ The following are lists of conventions that either *should* be followed or *must
 
 #### Java
 
+- URLs must be `kebab-case`
 - Packages:
   - Names must be `snake_case`
