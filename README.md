@@ -14,3 +14,18 @@ Backend for the DevLink platform - developed with Java Spring
   - [AssertJ](https://assertj.github.io/doc/) for assertions
   - [mockito](https://site.mockito.org/) for mocking
   - [Instancio](https://www.instancio.org/) for test data generation
+
+## Installation and Usage
+
+1. Have [Docker](https://www.docker.com/) set up and running
+2. Clone the repository, e.g. with:
+    ```sh
+    git clone https://github.com/DevLink-dev/devlink-backend-java.git
+    cd devlink-backend-java
+    ```
+3. Make a **copy** of [`.env.example`](.env.example) and rename it to `.env` (will be git-ignored)
+4. Add your environment secrets to [`.env`](.env) (will be used by both the database and the Spring application)
+5. Start Docker containers for database and Spring application:
+    ```sh
+    docker compose up -d
+    ```
