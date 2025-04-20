@@ -86,3 +86,6 @@ The following are lists of conventions that either *should* be followed or *must
     - Instance methods
 - `static` Constants:
   - Names must be `SCREAMING_SNAKE_CASE`
+- Instance Attributes and Method Parameters:
+  - Names must be `camelCase`
+  - Should be `final` unless there is a reason to change
