@@ -1,5 +1,7 @@
 # DevLink Backend
 
+> see also: [DevLink Frontend](https://github.com/DevLink-dev/devlink-frontend-svelte)!
+
 Backend for the DevLink platform - developed with Java Spring
 
 ## Technology Overview
