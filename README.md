@@ -47,3 +47,11 @@ Tools like [Lombok](https://projectlombok.org/) are used to reduce boilerplate c
     ```
    
 To use this project, it is advised to use the corresponding [Frontend](https://github.com/DevLink-dev/devlink-frontend-svelte). 
+
+## Development
+
+This project is developed following the conventions listed below.
+
+### Conventions
+
+The following are lists of conventions that either *should* be followed or *must* be followed when contributing to this project. 
