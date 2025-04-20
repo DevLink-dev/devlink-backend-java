@@ -121,3 +121,6 @@ The following are lists of conventions that either *should* be followed or *must
     - `public static` constants
     - other `private` members
   - Should explain **what** the code does and maybe **why**, but never **how**
+- Comments:
+  - Should be avoided except for Javadoc
+  - Necessary information regarding behavior should be added as Javadoc instead (e.g. `@apiNote`, `@implNote`, `@implSpec`)
