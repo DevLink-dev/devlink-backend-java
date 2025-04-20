@@ -124,3 +124,16 @@ The following are lists of conventions that either *should* be followed or *must
 - Comments:
   - Should be avoided except for Javadoc
   - Necessary information regarding behavior should be added as Javadoc instead (e.g. `@apiNote`, `@implNote`, `@implSpec`)
+- Lombok should be used to reduce boilerplate code and increase readability:
+  - Generation for:
+    - [Getters/Setters](https://projectlombok.org/features/GetterSetter)
+    - [equals()/hashCode()](https://projectlombok.org/features/EqualsAndHashCode)
+    - [Constructors](https://projectlombok.org/features/constructor)
+    - [Builders](https://projectlombok.org/features/Builder) including with [inheritance](https://projectlombok.org/features/experimental/SuperBuilder)
+    - [Loggers](https://projectlombok.org/features/log)
+    - [Utilities](https://projectlombok.org/features/experimental/UtilityClass)
+    - [Exceptions](https://projectlombok.org/features/experimental/StandardException)
+  - Can be used to set access levels of methods ([Getters/Setters](https://projectlombok.org/features/GetterSetter) and [Constructors](https://projectlombok.org/features/constructor))
+  - Can be used with annotations on methods and constructors using [onX](https://projectlombok.org/features/experimental/onX)
+  - Can be used to include or exclude fields for [equals()/hashCode()](https://projectlombok.org/features/EqualsAndHashCode)
+  - Other annotations than the ones mentioned above should not be used as some are difficult to comprehend or maintain
