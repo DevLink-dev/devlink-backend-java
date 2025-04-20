@@ -89,3 +89,26 @@ The following are lists of conventions that either *should* be followed or *must
 - Instance Attributes and Method Parameters:
   - Names must be `camelCase`
   - Should be `final` unless there is a reason to change
+- Methods:
+  - Names must be `camelCase`
+  - Should be at most around **15** lines long
+  - Should reference down to other `private` methods unless there is a specific reason not to (top-down structure)
+  - Indentations should not be more than 3 levels deep (counting method indentation level in class as zero)
+    ```java
+    public class Foo {
+        // This is level 0.
+        public void bar() {
+            // This is level 1.
+            for (int i = 0; i < 10; i++) {
+                // This is level 2.
+                for (int j = 0; j < 10; j++) {
+                    // This is level 3.
+                    if ((i + j) % 2 == 0) {
+                        // This is level 4 (forbidden).
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    ```
