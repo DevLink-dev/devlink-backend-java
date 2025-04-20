@@ -120,3 +120,4 @@ The following are lists of conventions that either *should* be followed or *must
   - May be added to:
     - `public static` constants
     - other `private` members
+  - Should explain **what** the code does and maybe **why**, but never **how**
