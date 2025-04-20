@@ -140,3 +140,10 @@ The following are lists of conventions that either *should* be followed or *must
 - Code must compile without Compiler Warnings
 - Code should compile without relevant Sonar/SonarQube Warnings
 
+#### Git
+
+- There are no comments including `TODO` on the `main` or `develop` branches
+- Branch names are as follows:
+  - features: `feature/<ticket-number>_<short-description>`
+  - bugs: `bugfix/<ticket-number>_<short-description>`
+- Commit messages are written according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
