@@ -128,12 +128,18 @@ The following are lists of conventions that either *should* be followed or *must
 - Lombok should be used to reduce boilerplate code and increase readability:
   - Generation for:
     - [Getters/Setters](https://projectlombok.org/features/GetterSetter)
+    - [Delegation](https://projectlombok.org/features/experimental/Delegate)
     - [equals()/hashCode()](https://projectlombok.org/features/EqualsAndHashCode)
     - [Constructors](https://projectlombok.org/features/constructor)
+    - [Copy Constructors as Setters](https://projectlombok.org/features/With)
+    - [toString()](https://projectlombok.org/features/ToString)
     - [Builders](https://projectlombok.org/features/Builder) including with [inheritance](https://projectlombok.org/features/experimental/SuperBuilder)
     - [Loggers](https://projectlombok.org/features/log): preferred is `@Log4j2`
     - [Utilities](https://projectlombok.org/features/experimental/UtilityClass)
     - [Exceptions](https://projectlombok.org/features/experimental/StandardException)
+    - Threading:
+      - [Synchronization](https://projectlombok.org/features/Synchronized)
+      - [Locking](https://projectlombok.org/features/Locked)
   - Can be used to set access levels of methods ([Getters/Setters](https://projectlombok.org/features/GetterSetter) and [Constructors](https://projectlombok.org/features/constructor))
   - Can be used with annotations on methods and constructors using [onX](https://projectlombok.org/features/experimental/onX)
   - Can be used to include or exclude fields for [equals()/hashCode()](https://projectlombok.org/features/EqualsAndHashCode)
