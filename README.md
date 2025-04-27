@@ -147,7 +147,8 @@ The following are lists of conventions that either *should* be followed or *must
 - Branch names are as follows:
   - features: `feature/<ticket-number>_<short-description>`
   - bugs: `bugfix/<ticket-number>_<short-description>`
-- Commit messages are written according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- Commit messages are written according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
+  - [List of Commit Types](https://github.com/pvdlg/conventional-commit-types?tab=readme-ov-file#commit-types)
 
 ### Logging
 with [Log4j 2](https://logging.apache.org/log4j/2.x/)
