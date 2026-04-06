@@ -85,6 +85,8 @@ The following are lists of conventions that either *should* be followed or *must
     - Constructors
     - `static` functions
     - Instance methods
+- Interfaces:
+  - Names must begin with `I` and continue in `PascalCase`
 - `static` Constants:
   - Names must be `SCREAMING_SNAKE_CASE`
 - Instance Attributes and Method Parameters:
